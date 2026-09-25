@@ -1,0 +1,174 @@
+```css
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    font-family: Inter, Arial, sans-serif;
+    color: #f5f7fa;
+
+    background:
+        radial-gradient(
+            circle at 50% 30%,
+            #123b3a 0%,
+            transparent 35%
+        ),
+        radial-gradient(
+            circle at 80% 80%,
+            #0d2524 0%,
+            transparent 30%
+        ),
+        #050909;
+}
+
+/* Main content */
+
+.container {
+    width: min(90%, 700px);
+    padding: 60px 30px;
+    text-align: center;
+}
+
+/* Badge */
+
+.badge {
+    display: inline-block;
+
+    padding: 7px 14px;
+    margin-bottom: 22px;
+
+    border: 1px solid rgba(80, 255, 220, 0.25);
+    border-radius: 999px;
+
+    color: #65ffe1;
+    background: rgba(80, 255, 220, 0.06);
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+/* Title */
+
+h1 {
+    margin-bottom: 18px;
+
+    font-size: clamp(42px, 8vw, 76px);
+    line-height: 1;
+    letter-spacing: -3px;
+
+    white-space: nowrap;
+
+    background: linear-gradient(
+        135deg,
+        #ffffff,
+        #8ffff0
+    );
+
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Description */
+
+.subtitle {
+    max-width: 520px;
+
+    margin: 0 auto 38px;
+
+    color: #8c9b9a;
+
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+/* Download button */
+
+.download {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    padding: 15px 30px;
+
+    color: #04100f;
+    background: #65ffe1;
+
+    border: none;
+    border-radius: 12px;
+
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+
+    box-shadow:
+        0 0 30px rgba(101, 255, 225, 0.15);
+
+    transition:
+        transform 0.2s ease,
+        box-shadow 0.2s ease,
+        background 0.2s ease;
+}
+
+.download:hover {
+    transform: translateY(-3px);
+
+    background: #8ffff0;
+
+    box-shadow:
+        0 10px 40px rgba(101, 255, 225, 0.25);
+}
+
+.download:active {
+    transform: translateY(-1px);
+}
+
+/* Download icon */
+
+.icon {
+    font-size: 18px;
+}
+
+/* Footer */
+
+footer {
+    position: fixed;
+    bottom: 24px;
+
+    color: #465453;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+}
+
+footer span {
+    color: #687977;
+}
+
+/* Mobile */
+
+@media (max-width: 500px) {
+    .container {
+        padding: 40px 20px;
+    }
+
+    h1 {
+        letter-spacing: -2px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+}
+```
